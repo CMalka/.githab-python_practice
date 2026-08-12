@@ -46,3 +46,13 @@ plt.title('Number of Students by Final Grade and Sleep Hours')
 plt.xlabel('Sleep Hours')
 plt.ylabel('Number of Students')
 plt.show()
+
+
+plt.figure(figsize=(8,5))
+sns.histplot(df["attendance_percent"],
+             color='green',
+             kde=True,
+             bins=20)
+
+plt.title("Attendance Percentage Distribution")
+plt.show()
